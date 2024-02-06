@@ -18,9 +18,7 @@
 //   the first element is the string, the second one is the command.
 // - The output element is going to be a Vector of strings.
 //
-// No hints this time!
-
-// I AM NOT DONE
+// No hints this time
 
 pub enum Command {
     Uppercase,
@@ -37,7 +35,7 @@ mod my_module {
                 Command::Uppercase => output.push(string.to_uppercase()),
                 Command::Trim => output.push(string.trim().to_string()),
                 Command::Append(times) => output.push(string + &"bar".repeat(times)[..]),
-            }
+                }
         }
         output
     }
